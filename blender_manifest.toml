@@ -1,6 +1,6 @@
 schema_version = "1.0.0"
 id = "reskate_mask_maker"
-version = "1.14.3"
+version = "1.0.0"
 name = "ReSkate Base Mask Packer"
 tagline = "Pack and unpack ReSkate clothing base masks"
 maintainer = "donajello"

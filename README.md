@@ -4,6 +4,8 @@ A Blender 5.2 extension for creating and unpacking Skate / ReSkate clothing base
 
 Pack metallic, roughness, and section maps into one texture, or extract editable maps from an existing base mask. Includes channel previews, PNG and DDS export, and reusable settings presets.
 
+![ReSkate Base Mask Packer interface](screenshot.png)
+
 ## Requirements
 
 - Blender 5.2 or later. Tested with Blender 5.2.0 LTS; later versions have not been independently tested.
@@ -12,7 +14,7 @@ Pack metallic, roughness, and section maps into one texture, or extract editable
 
 ## Installation
 
-1. Download `ReSkate-Base-Mask-Packer-x.x.xzip` from the repository's [Releases](https://github.com/donajello/ReSkate-Base-Mask-Packer/releases), once a release is published.
+1. Download `ReSkate-Base-Mask-Packer-1.0.0.zip` from the repository's [Releases](https://github.com/donajello/ReSkate-Base-Mask-Packer/releases), once a release is published.
 2. In Blender, open **Edit > Preferences > Get Extensions**.
 3. Open the menu at the top right and select **Install from Disk**.
 4. Select the extension ZIP without extracting it, and enable the extension.
@@ -160,7 +162,7 @@ It creates an installable extension ZIP under `dist/`. Blender supplies the runt
 To validate the ZIP with Blender:
 
 ```sh
-blender --command extension validate dist/ReSkate-Base-Mask-Packer-1.14.3.zip
+blender --command extension validate dist/ReSkate-Base-Mask-Packer-1.0.0.zip
 ```
 
 ## License
