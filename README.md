@@ -12,7 +12,7 @@ Pack metallic, roughness, and section maps into one texture, or extract editable
 
 ## Installation
 
-1. Download `ReSkate-Base-Mask-Packer-1.14.3.zip` from the repository's [Releases](https://github.com/donajello/ReSkate-Base-Mask-Packer/releases), once a release is published.
+1. Download `ReSkate-Base-Mask-Packer-x.x.xzip` from the repository's [Releases](https://github.com/donajello/ReSkate-Base-Mask-Packer/releases), once a release is published.
 2. In Blender, open **Edit > Preferences > Get Extensions**.
 3. Open the menu at the top right and select **Install from Disk**.
 4. Select the extension ZIP without extracting it, and enable the extension.
