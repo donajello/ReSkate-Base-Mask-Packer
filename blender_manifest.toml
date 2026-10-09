@@ -1,0 +1,13 @@
+schema_version = "1.0.0"
+id = "reskate_mask_maker"
+version = "1.14.3"
+name = "ReSkate Base Mask Packer"
+tagline = "Pack and unpack ReSkate clothing base masks"
+maintainer = "donajello"
+type = "add-on"
+website = "https://github.com/donajello/ReSkate-Base-Mask-Packer"
+tags = ["Material", "Import-Export"]
+blender_version_min = "5.2.0"
+license = ["SPDX:GPL-3.0-or-later"]
+[permissions]
+files = "Load textures, save presets and export PNG or DDS maps"
