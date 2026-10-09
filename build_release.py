@@ -12,4 +12,7 @@ archive = dest / f'ReSkate-Base-Mask-Packer-{version}.zip'
 with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED) as output:
     for name in ('__init__.py', 'blender_manifest.toml', 'README.md', 'LICENSE'):
         output.write(root / name, name)
+    for asset in sorted((root / 'docs').rglob('*')):
+        if asset.is_file():
+            output.write(asset, asset.relative_to(root).as_posix())
 print(archive)

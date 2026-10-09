@@ -6,6 +6,36 @@ Pack metallic, roughness, and section maps into one texture, or extract editable
 
 ![ReSkate Base Mask Packer interface](screenshot.png)
 
+## Example: unpack and rebuild
+
+This example uses the Converse shoe mask supplied for testing. The original DDS is included
+as [original-mask.dds](docs/images/original-mask.dds); the image below is its decoded PNG preview.
+
+### Original base mask
+
+<img src="docs/images/original-mask.png" alt="Original Converse base mask" width="560">
+
+### Three extracted maps
+
+| Metallic Map (R) | Roughness Map (G) | Section Map (B) |
+| --- | --- | --- |
+| <img src="docs/images/metallic.png" alt="Extracted metallic map" width="260"> | <img src="docs/images/roughness.png" alt="Extracted roughness map" width="260"> | <img src="docs/images/section-selector.png" alt="Extracted blue section selector" width="260"> |
+
+Metallic comes from red. Roughness is the inverse of the original green smoothness channel.
+The section map preserves the original blue values and displays them in blue only.
+
+### Rebuilt base mask
+
+<img src="docs/images/rebuilt-mask.png" alt="Base mask rebuilt from the three extracted maps" width="560">
+
+To rebuild, use the metallic, roughness and section maps with source channels R, G and B.
+Leave **Is Smoothness Map** and **Snap to three sections** off, keep the original dimensions,
+and generate the mask. The PNGs above are the supplied examples; DDS decoding and
+recompression may introduce small differences depending on the software used.
+
+These game-texture examples are for illustrating the workflow and are not covered by the
+plugin's GPL license. Rights to the original game assets remain with their respective owners.
+
 ## Requirements
 
 - Blender 5.2 or later. Tested with Blender 5.2.0 LTS; later versions have not been independently tested.
